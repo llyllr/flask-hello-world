@@ -39,12 +39,12 @@ arr=[]
 for i,vid in enumerate(req.json()['itemList']):
     #print(vid['desc'])
     arr.append(vid['desc'])
-    urllib.request.urlretrieve(vid['video']['downloadAddr'],'downloaded/'+str(i)+'.mp4')
+    urllib.request.urlretrieve(vid['video']['downloadAddr'],str(i)+'.mp4')
     #print(vid['video']['downloadAddr'])
     if i==1:
         #final_clip=concatenate_videoclips([VideoFileClip("downloaded/9.mp4"),VideoFileClip("downloaded/10.mp4"),VideoFileClip("downloaded/11.mp4"),VideoFileClip("downloaded/8.mp4")],method='compose')
         #final_clip.write_videofile("my_stack1.mp4",audio_codec="aac")
-        with VideoFileClip("my_stack1.mp4") as video:
+        with VideoFileClip("0.mp4") as video:
             if video.aspect_ratio < 1.7:
                 video.write_videofile(
                     "my_stack.mp4",audio_codec="aac",
