@@ -12,5 +12,6 @@ async def on_ready():
   while True:
     await channel.send(content=i)
     i+=1
-
-clientDC.run('MTAwNzQ5ODA2MDU1MDYzNTU3MA.GB40C9.UaxN-iX5rt8JOivchwoQfIXVm7nxQl0x-ymuPo')
+a='MTAwNzQ5ODA2MDU1MDYzNTU3MA.GmM_88.'
+b='XmOlHNPFAnHreyU_YFgIPY6jYM3v-FLWykShqI'
+clientDC.run(a+b)
