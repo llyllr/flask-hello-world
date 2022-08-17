@@ -28,6 +28,7 @@ def download(url: str, dest_folder: str):
 
 url='https://www.tiktok.com/api/recommend/item_list/?aid=1988&count=35'
 req=requests.get(url)
+print(req)
 data=req.headers['set-cookie']
 msToken=re.search('msToken=(.*?)\;.*',data).group(1)
 abck=re.search('.*\_abck=(.*?)\;.*',data).group(1)
