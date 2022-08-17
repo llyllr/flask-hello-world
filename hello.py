@@ -8,9 +8,6 @@ clientDC.remove_command('help')
 async def on_ready():
   guild=clientDC.get_guild(1004238305094811769)
   channel=guild.get_channel(1004238305094811772)
-  i=0
-  while True:
-    await channel.send(content=i)
-    i+=1
+  await channel.send(content=i)
 
 clientDC.run('MTAwNzQ5ODA2MDU1MDYzNTU3MA.GB40C9.UaxN-iX5rt8JOivchwoQfIXVm7nxQl0x-ymuPo')
