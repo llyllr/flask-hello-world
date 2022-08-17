@@ -2,7 +2,7 @@ import os, time,re, asyncio
 import discord
 from discord.ext import commands, tasks
 intents = discord.Intents().all()
-clientDC = commands.Bot(intents=intents)
+clientDC = commands.Bot(command_prefix='*',intents=intents)
 clientDC.remove_command('help')
 @clientDC.event
 async def on_ready():
